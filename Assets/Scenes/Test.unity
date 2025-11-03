@@ -524,23 +524,58 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 750033650}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &750033654
+--- !u!1 &752161445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+  m_PrefabInstance: {fileID: 1651712823915568798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &752161447 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8512729139769654727, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+  m_PrefabInstance: {fileID: 1651712823915568798}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752161445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &752161449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750033647}
+  m_GameObject: {fileID: 752161445}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 750033650}
+  mObserverBehaviour: {fileID: 752161447}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Water_1
+  mTargetName: Methane_1
   mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 750033650}
+  mCastedBehaviour: {fileID: 752161447}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &752161450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752161445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 752161447}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Methane_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 752161447}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
 --- !u!1 &993116227
@@ -1036,7 +1071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5781416148983355116, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5781416148983355116, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1086,10 +1121,25 @@ PrefabInstance:
       propertyPath: mMeshRenderer
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8177762909962979280, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      propertyPath: rotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512729139769654727, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      propertyPath: mPreview
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7979418367585449647, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 752161450}
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 752161449}
   m_SourcePrefab: {fileID: 100100000, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
 --- !u!1001 &7772701040158768588
 PrefabInstance:
@@ -1167,9 +1217,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 750033653}
-    - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 750033654}
   m_SourcePrefab: {fileID: 100100000, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
