@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="Methane_1" size="1.000000 1.019815" />
+    <ImageTarget name="Water_1" size="1.000000 0.819022" />
+  </Tracking>
+</QCARConfig>
