@@ -1122,6 +1122,82 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 750033650}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &750033667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750033647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 750033650}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Water_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 750033650}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &750033668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750033647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 750033650}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Water_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 750033650}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &750033669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750033647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 750033650}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Water_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 750033650}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &750033670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750033647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 750033650}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Water_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 750033650}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &752161445 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
@@ -1403,6 +1479,139 @@ MonoBehaviour:
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
 --- !u!114 &752161466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752161445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 752161447}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Methane_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 752161447}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &752161467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752161445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 752161447}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Methane_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 752161447}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &752161468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752161445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 752161447}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Methane_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 752161447}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &752161469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752161445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 752161447}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Methane_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 752161447}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &752161470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752161445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 752161447}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Methane_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 752161447}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &752161471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752161445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 752161447}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Methane_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 752161447}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &752161472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752161445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 752161447}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Methane_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 752161447}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &752161473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2254,6 +2463,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
+    - target: {fileID: 7794414879972035886, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c9aaa8aacec2d04fae7983d33f39d20, type: 2}
     - target: {fileID: 7979418367585449647, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
       propertyPath: mHiddenRoot
       value: 
@@ -2324,6 +2537,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 752161465}
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 752161473}
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 752161472}
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 752161471}
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 752161470}
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 752161469}
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 752161468}
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 752161467}
   m_SourcePrefab: {fileID: 100100000, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
 --- !u!1001 &7772701040158768588
 PrefabInstance:
@@ -2389,6 +2623,10 @@ PrefabInstance:
       propertyPath: mMeshRenderer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4651771757862087835, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 91d6406544c01c34f9e906da77f20c9c, type: 2}
     - target: {fileID: 5866214877257113365, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
       propertyPath: mPreview
       value: 
@@ -2502,6 +2740,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 750033665}
+    - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 750033670}
+    - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 750033669}
+    - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 750033668}
+    - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 750033667}
   m_SourcePrefab: {fileID: 100100000, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

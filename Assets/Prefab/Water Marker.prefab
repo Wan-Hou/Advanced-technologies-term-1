@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2038105636805432991}
   - component: {fileID: 5866214877257113365}
   - component: {fileID: 8495273530638848201}
-  - component: {fileID: 3541330499959757141}
-  - component: {fileID: -1356230876205721387}
+  - component: {fileID: 1604263810990887644}
+  - component: {fileID: 4285640316395037761}
   m_Layer: 0
   m_Name: Water Marker
   m_TagString: Untagged
@@ -62,7 +62,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 3541330499959757141}
+  mPreview: {fileID: 4285640316395037761}
 --- !u!114 &8495273530638848201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,11 +103,52 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1604263810990887644}
+        m_TargetAssemblyTypeName: Change_UI, Assembly-CSharp
+        m_MethodName: LoadTextIntoUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &3541330499959757141
+      m_Calls:
+      - m_Target: {fileID: 1604263810990887644}
+        m_TargetAssemblyTypeName: Change_UI, Assembly-CSharp
+        m_MethodName: DisableUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1604263810990887644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7570303068206472604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_to_load: H2O - Angular
+  ui_panel: {fileID: 0}
+  ui_text_reference: {fileID: 0}
+  image_to_load: {fileID: 21300000, guid: 32ec1cf7c1488064db1e05d970f69590, type: 3}
+  ui_image_reference: {fileID: 0}
+--- !u!114 &4285640316395037761
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,23 +167,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 5866214877257113365}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &-1356230876205721387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7570303068206472604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_to_load: H2O - Angular
-  ui_panel: {fileID: 0}
-  ui_text_reference: {fileID: 0}
-  image_to_load: {fileID: 21300000, guid: 32ec1cf7c1488064db1e05d970f69590, type: 3}
-  ui_image_reference: {fileID: 0}
 --- !u!1001 &3953622986041570834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,10 +215,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3398991998652213271, guid: 225888e9101eaf94783549e16f5c45d7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bda9c803a2b2fef4db14bb5b61c24fe2, type: 2}
     - target: {fileID: 4795834954086132136, guid: 225888e9101eaf94783549e16f5c45d7, type: 3}
       propertyPath: m_Name
       value: Water Molecule
       objectReference: {fileID: 0}
+    - target: {fileID: 6029986290320186313, guid: 225888e9101eaf94783549e16f5c45d7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
+    - target: {fileID: 7526584693243954991, guid: 225888e9101eaf94783549e16f5c45d7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
+    - target: {fileID: 8525453647113607817, guid: 225888e9101eaf94783549e16f5c45d7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 91d6406544c01c34f9e906da77f20c9c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

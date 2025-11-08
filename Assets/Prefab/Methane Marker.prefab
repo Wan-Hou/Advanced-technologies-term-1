@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5781416148983355116}
   - component: {fileID: 8512729139769654727}
   - component: {fileID: 5772146124838395848}
-  - component: {fileID: 7979418367585449647}
-  - component: {fileID: 3776645311961940418}
+  - component: {fileID: 1549016334151886200}
+  - component: {fileID: 3843499509953816892}
   m_Layer: 0
   m_Name: Methane Marker
   m_TagString: Untagged
@@ -62,7 +62,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 7979418367585449647}
+  mPreview: {fileID: 3843499509953816892}
 --- !u!114 &5772146124838395848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,11 +103,52 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1549016334151886200}
+        m_TargetAssemblyTypeName: Change_UI, Assembly-CSharp
+        m_MethodName: LoadTextIntoUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &7979418367585449647
+      m_Calls:
+      - m_Target: {fileID: 1549016334151886200}
+        m_TargetAssemblyTypeName: Change_UI, Assembly-CSharp
+        m_MethodName: DisableUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1549016334151886200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5562281280191703016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_to_load: CH4 - Tetrahedral
+  ui_panel: {fileID: 0}
+  ui_text_reference: {fileID: 0}
+  image_to_load: {fileID: 21300000, guid: cac083529fe3d334889a23fd55b03600, type: 3}
+  ui_image_reference: {fileID: 0}
+--- !u!114 &3843499509953816892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,23 +167,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 8512729139769654727}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &3776645311961940418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5562281280191703016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_to_load: CH4 - Tetrahedral
-  ui_panel: {fileID: 0}
-  ui_text_reference: {fileID: 0}
-  image_to_load: {fileID: 21300000, guid: cac083529fe3d334889a23fd55b03600, type: 3}
-  ui_image_reference: {fileID: 0}
 --- !u!1001 &4039590459956617250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -151,6 +175,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5781416148983355116}
     m_Modifications:
+    - target: {fileID: 165991981680937048, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
+    - target: {fileID: 831474571571606093, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
     - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -191,10 +223,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6466418370953627390, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
     - target: {fileID: 7333450136619191670, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
       propertyPath: m_Name
       value: Methane Molecule
       objectReference: {fileID: 0}
+    - target: {fileID: 9116935420947969488, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

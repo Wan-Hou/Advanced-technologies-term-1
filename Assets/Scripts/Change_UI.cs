@@ -12,6 +12,7 @@ public class Change_UI : MonoBehaviour
 
     public void LoadTextIntoUI()
     {
+        Debug.Log("Found");
         ui_text_reference.text = text_to_load;
         ui_image_reference.sprite = image_to_load;
         ui_panel.gameObject.SetActive(true);
@@ -19,6 +20,7 @@ public class Change_UI : MonoBehaviour
 
     public void DisableUI()
     {
+        Debug.Log("Lost");
         ui_panel.gameObject.SetActive(false);
     }
 
