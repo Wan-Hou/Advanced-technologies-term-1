@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 2038105636805432991}
   - component: {fileID: 5866214877257113365}
   - component: {fileID: 8495273530638848201}
-  - component: {fileID: 1604263810990887644}
-  - component: {fileID: 4285640316395037761}
+  - component: {fileID: 4840980937696911807}
   m_Layer: 0
   m_Name: Water Marker
   m_TagString: Untagged
@@ -62,7 +61,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 4285640316395037761}
+  mPreview: {fileID: 0}
 --- !u!114 &8495273530638848201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +103,7 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1604263810990887644}
+      - m_Target: {fileID: 4840980937696911807}
         m_TargetAssemblyTypeName: Change_UI, Assembly-CSharp
         m_MethodName: LoadTextIntoUI
         m_Mode: 1
@@ -119,7 +118,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1604263810990887644}
+      - m_Target: {fileID: 4840980937696911807}
         m_TargetAssemblyTypeName: Change_UI, Assembly-CSharp
         m_MethodName: DisableUI
         m_Mode: 1
@@ -131,7 +130,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1604263810990887644
+--- !u!114 &4840980937696911807
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,28 +144,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_to_load: H2O - Angular
   ui_panel: {fileID: 0}
+  tutorial_panel: {fileID: 0}
   ui_text_reference: {fileID: 0}
   image_to_load: {fileID: 21300000, guid: 32ec1cf7c1488064db1e05d970f69590, type: 3}
   ui_image_reference: {fileID: 0}
---- !u!114 &4285640316395037761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7570303068206472604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 5866214877257113365}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Water_1
-  mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 5866214877257113365}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1001 &3953622986041570834
 PrefabInstance:
   m_ObjectHideFlags: 0
