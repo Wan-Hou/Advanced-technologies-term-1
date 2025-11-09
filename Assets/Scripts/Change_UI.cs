@@ -22,7 +22,10 @@ public class Change_UI : MonoBehaviour
     public void DisableUI()
     {
         Debug.Log("Lost");
-        ui_panel.gameObject.SetActive(false);
+        if (ui_text_reference.text == text_to_load)
+        {
+            ui_panel.gameObject.SetActive(false);
+        }
     }
 
 }

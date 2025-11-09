@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class Buttons : MonoBehaviour
 {
+    public GameObject ui_panel, tutorial_panel;
     public void QuitApplication()
     {
         Debug.Log("Quitting application.");
+        ui_panel.gameObject.SetActive(false);
+        tutorial_panel.gameObject.SetActive(true);
 
         try
         {
