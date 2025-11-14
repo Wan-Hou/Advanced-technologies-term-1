@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 12319303879094574}
   - component: {fileID: 7831967751466704598}
   m_Layer: 0
-  m_Name: Water Molecule
+  m_Name: Simple Water Molecule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

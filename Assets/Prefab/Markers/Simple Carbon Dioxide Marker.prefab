@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5562281280191703016
+--- !u!1 &616967876263983847
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5781416148983355116}
-  - component: {fileID: 8512729139769654727}
-  - component: {fileID: 5772146124838395848}
-  - component: {fileID: 1549016334151886200}
+  - component: {fileID: 8184849453757550718}
+  - component: {fileID: 8103372541516719887}
+  - component: {fileID: 6448898052703513325}
+  - component: {fileID: 3389508871175881965}
   m_Layer: 0
-  m_Name: Methane Marker
+  m_Name: Simple Carbon Dioxide Marker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5781416148983355116
+--- !u!4 &8184849453757550718
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5562281280191703016}
+  m_GameObject: {fileID: 616967876263983847}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 9134685037613722105}
+  - {fileID: 5186487362101457921}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8512729139769654727
+--- !u!114 &8103372541516719887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5562281280191703016}
+  m_GameObject: {fileID: 616967876263983847}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
@@ -50,25 +50,25 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: Methane_1
+  mTrackableName: Carbon_Dioxide_1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ChemicAR.xml
-  mAspectRatio: 1.019815
+  mAspectRatio: 0.4
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1.019815
+  mHeight: 0.4
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 0}
---- !u!114 &5772146124838395848
+--- !u!114 &6448898052703513325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5562281280191703016}
+  m_GameObject: {fileID: 616967876263983847}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
@@ -103,7 +103,7 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1549016334151886200}
+      - m_Target: {fileID: 3389508871175881965}
         m_TargetAssemblyTypeName: Change_UI, Assembly-CSharp
         m_MethodName: LoadTextIntoUI
         m_Mode: 1
@@ -118,7 +118,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1549016334151886200}
+      - m_Target: {fileID: 3389508871175881965}
         m_TargetAssemblyTypeName: Change_UI, Assembly-CSharp
         m_MethodName: DisableUI
         m_Mode: 1
@@ -130,99 +130,83 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1549016334151886200
+--- !u!114 &3389508871175881965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5562281280191703016}
+  m_GameObject: {fileID: 616967876263983847}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: CH4 - Tetrahedral
+  text_to_load: CO2 - Linear
   ui_panel: {fileID: 0}
   tutorial_panel: {fileID: 0}
   ui_text_reference: {fileID: 0}
-  image_to_load: {fileID: 21300000, guid: cac083529fe3d334889a23fd55b03600, type: 3}
+  image_to_load: {fileID: 0}
   ui_image_reference: {fileID: 0}
---- !u!1001 &4039590459956617250
+--- !u!1001 &8111282790462916775
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 5781416148983355116}
+    m_TransformParent: {fileID: 8184849453757550718}
     m_Modifications:
-    - target: {fileID: 165991981680937048, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
-    - target: {fileID: 831474571571606093, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 266662187803492846, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
+      propertyPath: m_Name
+      value: Simple Carbon Dioxide Molecule
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
+    - target: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6466418370953627390, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
-    - target: {fileID: 7333450136619191670, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
-      propertyPath: m_Name
-      value: Methane Molecule
-      objectReference: {fileID: 0}
-    - target: {fileID: 9116935420947969488, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: bc2a7d1ec77d00448912a8266aae8fac, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
---- !u!4 &9134685037613722105 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
+--- !u!4 &5186487362101457921 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5101287250542447067, guid: 64a334df9d9c8bb4f8e2cb0700eca10f, type: 3}
-  m_PrefabInstance: {fileID: 4039590459956617250}
+  m_CorrespondingSourceObject: {fileID: 3993297031485734054, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
+  m_PrefabInstance: {fileID: 8111282790462916775}
   m_PrefabAsset: {fileID: 0}
