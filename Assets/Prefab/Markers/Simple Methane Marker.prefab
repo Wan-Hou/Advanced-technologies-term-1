@@ -143,11 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_to_load: CH4 - Tetrahedral
-  ui_panel: {fileID: 0}
-  tutorial_panel: {fileID: 0}
-  ui_text_reference: {fileID: 0}
-  image_to_load: {fileID: 21300000, guid: cac083529fe3d334889a23fd55b03600, type: 3}
-  ui_image_reference: {fileID: 0}
+  image_to_load: {fileID: 21300000, guid: d481daf394dcd134d80c7d9cc4d8e1c7, type: 3}
 --- !u!1001 &4039590459956617250
 PrefabInstance:
   m_ObjectHideFlags: 0

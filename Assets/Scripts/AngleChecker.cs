@@ -13,7 +13,7 @@ public class AngleChecker : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("AngleChecker started.");
+        Debug.Log($"Angle threshold set to: {angle_threshold} degrees.");
     }
 
     // Update is called once per frame
@@ -30,20 +30,40 @@ public class AngleChecker : MonoBehaviour
         Vector3 dir1 = point1.transform.position - origin.transform.position;
         Vector3 dir2 = point2.transform.position - origin.transform.position;
         float angle = Vector3.Angle(dir1, dir2);
-        float diff_mag = FindMagnitude(angle - angle_threshold);
-        if (angle != angle_threshold)
+        float diff_mag = FindMagnitude(angle_threshold - angle);
+        if (diff_mag != 0)
         {
             foreach (var obj in objects_to_check)
             {
-                RotateObjects(obj, -diff_mag);
+                RotateObjects(obj, diff_mag);
             }
             Debug.Log($"Calculated angle: {angle} degrees. " +
+                      $"Angle difference: {angle_threshold - angle}. " +
                       $"Magnitude: {diff_mag}. Incorrect Angle.");
         }
         else
         {
             correct_angle = true;
             Debug.Log($"Calculated angle: {angle} degrees. Correct Angle.");
+            switch (axis_to_check)
+            {
+                case Axis.X:
+                    {
+                        angle = objects_to_check[0].transform.rotation.eulerAngles.x;
+                        break;
+                    }
+                case Axis.Y:
+                    {
+                        angle = objects_to_check[0].transform.rotation.eulerAngles.y;
+                        break;
+                    }
+                case Axis.Z:
+                    {
+                        angle = objects_to_check[0].transform.rotation.eulerAngles.z;
+                        break;
+                    }
+            }
+            Debug.Log($"Final angle: {angle} degrees.");
         }
     }
 
@@ -71,12 +91,16 @@ public class AngleChecker : MonoBehaviour
 
     private static float FindMagnitude(float f)
     {
-        if (f == 0)
+        float magnitude = Mathf.Pow(10, Mathf.Floor(Mathf.Log10(Mathf.Abs(f))));
+        if ((f == 0) || (Mathf.Abs(magnitude) < Mathf.Pow(10, -5)))
         {
             return 0;
         }
-        float scale = Mathf.Pow(10, Mathf.Floor(Mathf.Log10(Mathf.Abs(f))) + 1);
-        return (1 / scale);
+        else if (f < 0)
+        {
+            magnitude = -magnitude;
+        }
+        return magnitude;
     }
 
     public enum Axis
