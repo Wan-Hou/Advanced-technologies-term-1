@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="Oxygen_1" size="1.000000 0.923077" />
+    <ImageTarget name="Carbon_1" size="1.000000 0.923077" />
+    <ImageTarget name="Hydrogen_1" size="1.000000 0.923077" />
     <ImageTarget name="Ammonia_1" size="1.000000 0.852490" />
     <ImageTarget name="Sulfur_Trioxide_1" size="1.000000 1.000000" />
     <ImageTarget name="Carbon_Dioxide_1" size="1.000000 0.400000" />
