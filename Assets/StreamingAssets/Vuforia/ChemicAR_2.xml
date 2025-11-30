@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="c_a_1_1" size="1.000000 1.008646" />
+    <ImageTarget name="h_a_1_1" size="1.000000 1.005747" />
+    <ImageTarget name="o_a_1_1" size="1.000000 1.008646" />
+    <ImageTarget name="O6" size="1.000000 0.892308" />
+    <ImageTarget name="O5" size="1.000000 0.892308" />
+    <ImageTarget name="O4" size="1.000000 0.892308" />
+    <ImageTarget name="O3" size="1.000000 0.892308" />
+    <ImageTarget name="O2" size="1.000000 0.892308" />
+    <ImageTarget name="O1" size="1.000000 0.892308" />
+    <ImageTarget name="N6" size="1.000000 0.892308" />
+    <ImageTarget name="N5" size="1.000000 0.892308" />
+    <ImageTarget name="N4" size="1.000000 0.892308" />
+    <ImageTarget name="N3" size="1.000000 0.892308" />
+    <ImageTarget name="N2" size="1.000000 0.892308" />
+    <ImageTarget name="N1" size="1.000000 0.892308" />
+    <ImageTarget name="H6" size="1.000000 0.892308" />
+    <ImageTarget name="H5" size="1.000000 0.892308" />
+    <ImageTarget name="H4" size="1.000000 0.892308" />
+    <ImageTarget name="H3" size="1.000000 0.892308" />
+    <ImageTarget name="H2" size="1.000000 0.892308" />
+    <ImageTarget name="H1" size="1.000000 0.892308" />
+    <ImageTarget name="C6" size="1.000000 0.892308" />
+    <ImageTarget name="C5" size="1.000000 0.892308" />
+    <ImageTarget name="C4" size="1.000000 0.892308" />
+    <ImageTarget name="C3" size="1.000000 0.892308" />
+    <ImageTarget name="C2" size="1.000000 0.892308" />
+    <ImageTarget name="C1" size="1.000000 0.892308" />
+  </Tracking>
+</QCARConfig>

@@ -149,3 +149,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0408f8d6b120444b84fac12c6ab3ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  connected_h: []
+  isConnectedToAnotherAtom: 0

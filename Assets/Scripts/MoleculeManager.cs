@@ -5,12 +5,10 @@ public class MoleculeManager : MonoBehaviour
 {
     public static MoleculeManager instance = null;
     [Header("Molecule References")]
-    public bool h2_initialized = false;
-    public GameObject h2_prefab = null;
-    public GameObject h2_molecule = null;
-    public bool co_initialized = false;
-    public GameObject co_prefab = null;
-    public GameObject co_molecule = null;
+    public Molecule h2 = new Molecule();
+    public Molecule co = new Molecule();
+    public Molecule o2 = new Molecule();
+    public Molecule h2o = new Molecule();
 
     private void Awake()
     {
@@ -30,5 +28,20 @@ public class MoleculeManager : MonoBehaviour
     void Update()
     {
         
+    }
+}
+
+[System.Serializable]
+public class Molecule
+{
+    public bool initialized;
+    public GameObject prefab;
+    public GameObject instance;
+
+    public Molecule()
+    {
+        initialized = false;
+        prefab = null;
+        instance = null;
     }
 }
