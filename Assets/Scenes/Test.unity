@@ -240,18 +240,26 @@ MonoBehaviour:
   h2:
     initialized: 0
     prefab: {fileID: 4161818489542422665, guid: 151b3e630decaf34a871aa7edf334727, type: 3}
+    text_to_load: H2 - Linear
+    image_to_load: {fileID: 0}
     instance: {fileID: 0}
   co:
     initialized: 0
     prefab: {fileID: 7399889472813006014, guid: f6d42ac1c300e4d49a9e3100c69000b5, type: 3}
+    text_to_load: CO - Linear
+    image_to_load: {fileID: 21300000, guid: 707899a42b358ae4b9b0e472cfe8c8c1, type: 3}
     instance: {fileID: 0}
   o2:
     initialized: 0
     prefab: {fileID: 3938277557079516144, guid: b8cf0e60b6ba26e41bf860395c34cc61, type: 3}
+    text_to_load: O2 - Linear
+    image_to_load: {fileID: 0}
     instance: {fileID: 0}
   h2o:
     initialized: 0
     prefab: {fileID: 4795834954086132136, guid: 225888e9101eaf94783549e16f5c45d7, type: 3}
+    text_to_load: H2O - Angular
+    image_to_load: {fileID: 21300000, guid: 32ec1cf7c1488064db1e05d970f69590, type: 3}
     instance: {fileID: 0}
 --- !u!1 &117020897
 GameObject:
@@ -262,7 +270,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 117020898}
-  - component: {fileID: 117020899}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -286,19 +293,6 @@ Transform:
   - {fileID: 2140051560}
   m_Father: {fileID: 1814919397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &117020899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117020897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &146162926
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +305,7 @@ GameObject:
   - component: {fileID: 146162930}
   - component: {fileID: 146162929}
   - component: {fileID: 146162928}
-  - component: {fileID: 146162927}
+  - component: {fileID: 146162932}
   m_Layer: 0
   m_Name: Simple Carbon Mark 2 Marker
   m_TagString: Untagged
@@ -319,25 +313,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &146162927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146162926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 146162930}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: c_a_1_1
-  mDatasetName: Vuforia/ChemicAR_2.xml
-  mCastedBehaviour: {fileID: 146162930}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &146162928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,7 +421,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 146162927}
+  mPreview: {fileID: 146162932}
 --- !u!4 &146162931
 Transform:
   m_ObjectHideFlags: 0
@@ -463,6 +438,25 @@ Transform:
   - {fileID: 1228844407}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &146162932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146162926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 146162930}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: c_a_1_1
+  mDatasetName: Vuforia/ChemicAR_2.xml
+  mCastedBehaviour: {fileID: 146162930}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &153443896
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +611,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5866214877257113365, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
+      propertyPath: mPreview
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
       propertyPath: m_Name
       value: Simple Water Marker
@@ -628,9 +626,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 163602980}
-    - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 163602981}
   m_SourcePrefab: {fileID: 100100000, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
 --- !u!1 &163602975 stripped
 GameObject:
@@ -667,25 +662,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 163602976}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &163602981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163602975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 163602976}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Water_1
-  mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 163602976}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!4 &168190882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5008487948227983038, guid: 3c8b692ef90fabe42be6e3c3b2c3911f, type: 3}
@@ -700,7 +676,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 168811486}
-  - component: {fileID: 168811487}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -724,19 +699,6 @@ Transform:
   - {fileID: 391135440}
   m_Father: {fileID: 1054394280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &168811487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168811485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &189698697
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,7 +822,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 201110776}
-  - component: {fileID: 201110777}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -884,19 +845,6 @@ Transform:
   - {fileID: 270443954}
   m_Father: {fileID: 1495803833}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &201110777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201110775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &218734067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,7 +1100,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224977536}
-  - component: {fileID: 224977537}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -1176,19 +1123,6 @@ Transform:
   - {fileID: 1351601500}
   m_Father: {fileID: 1893868146}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &224977537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224977535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &249756485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,7 +1362,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 271608976}
-  - component: {fileID: 271608977}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -1452,19 +1385,6 @@ Transform:
   - {fileID: 945127653}
   m_Father: {fileID: 1518088097}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &271608977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271608975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &313662663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,7 +1722,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 338849787}
-  - component: {fileID: 338849788}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -1826,19 +1745,6 @@ Transform:
   - {fileID: 1581701700}
   m_Father: {fileID: 333434817}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &338849788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338849786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &344458068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,7 +1867,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 392488021}
-  - component: {fileID: 392488022}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -1985,19 +1890,6 @@ Transform:
   - {fileID: 1167620957}
   m_Father: {fileID: 1327351897}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &392488022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392488020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &424570388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,7 +1899,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 424570389}
-  - component: {fileID: 424570390}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -2031,19 +1922,6 @@ Transform:
   - {fileID: 1879126519}
   m_Father: {fileID: 1034978442}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &424570390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424570388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &455253479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2110,7 +1988,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 459656640}
-  - component: {fileID: 459656641}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -2134,19 +2011,6 @@ Transform:
   - {fileID: 168190882}
   m_Father: {fileID: 218734068}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &459656641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459656639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &560242821
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,6 +2227,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8512729139769654727, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      propertyPath: mPreview
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2370,9 +2238,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 565102458}
-    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 565102459}
   m_SourcePrefab: {fileID: 100100000, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
 --- !u!1 &565102453 stripped
 GameObject:
@@ -2409,25 +2274,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 565102454}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &565102459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565102453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 565102454}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Methane_1
-  mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 565102454}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &595894659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,7 +2283,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595894660}
-  - component: {fileID: 595894661}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -2461,19 +2306,6 @@ Transform:
   - {fileID: 223297637}
   m_Father: {fileID: 1765135511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &595894661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595894659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &601340320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,7 +2479,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 625159081}
-  - component: {fileID: 625159082}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -2671,19 +2502,6 @@ Transform:
   - {fileID: 1374077819}
   m_Father: {fileID: 1574843737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &625159082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625159080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &628519321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2693,7 +2511,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 628519322}
-  - component: {fileID: 628519323}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -2717,19 +2534,6 @@ Transform:
   - {fileID: 1138377988}
   m_Father: {fileID: 1932991521}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &628519323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628519321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &658351998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,7 +2543,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 658351999}
-  - component: {fileID: 658352000}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -2763,19 +2566,6 @@ Transform:
   - {fileID: 1882918616}
   m_Father: {fileID: 981727064}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &658352000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658351998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &669717647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3208,7 +2998,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 790554624}
-  - component: {fileID: 790554625}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -3232,19 +3021,6 @@ Transform:
   - {fileID: 1197652371}
   m_Father: {fileID: 676593754}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &790554625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790554623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &798075799
 GameObject:
   m_ObjectHideFlags: 0
@@ -3502,7 +3278,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880941848}
-  - component: {fileID: 880941849}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -3526,19 +3301,6 @@ Transform:
   - {fileID: 995774342}
   m_Father: {fileID: 1854250816}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &880941849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880941847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!4 &884624920 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5008487948227983038, guid: 3c8b692ef90fabe42be6e3c3b2c3911f, type: 3}
@@ -4580,7 +4342,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1053906502}
-  - component: {fileID: 1053906503}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -4604,19 +4365,6 @@ Transform:
   - {fileID: 1130087204}
   m_Father: {fileID: 1616075416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1053906503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053906501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1054394279
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,7 +4538,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1071036642}
-  - component: {fileID: 1071036643}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -4814,19 +4561,6 @@ Transform:
   - {fileID: 1827914231}
   m_Father: {fileID: 1297624274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1071036643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071036641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1091014149
 GameObject:
   m_ObjectHideFlags: 0
@@ -4836,7 +4570,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1091014150}
-  - component: {fileID: 1091014151}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -4860,19 +4593,6 @@ Transform:
   - {fileID: 1195593515}
   m_Father: {fileID: 1911657526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1091014151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091014149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &1117162620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4989,7 +4709,7 @@ GameObject:
   - component: {fileID: 1158471388}
   - component: {fileID: 1158471387}
   - component: {fileID: 1158471386}
-  - component: {fileID: 1158471385}
+  - component: {fileID: 1158471390}
   m_Layer: 0
   m_Name: Simple Hydrogen Mark 2 Marker
   m_TagString: Untagged
@@ -4997,25 +4717,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1158471385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158471384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1158471388}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: h_a_1_1
-  mDatasetName: Vuforia/ChemicAR_2.xml
-  mCastedBehaviour: {fileID: 1158471388}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1158471386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5124,7 +4825,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1158471385}
+  mPreview: {fileID: 1158471390}
 --- !u!4 &1158471389
 Transform:
   m_ObjectHideFlags: 0
@@ -5141,6 +4842,25 @@ Transform:
   - {fileID: 1326937897}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1158471390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158471384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1158471388}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: h_a_1_1
+  mDatasetName: Vuforia/ChemicAR_2.xml
+  mCastedBehaviour: {fileID: 1158471388}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!4 &1167620957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 177981630627498811, guid: 6924d8a11f2421a4ca037896bd979e6c, type: 3}
@@ -5306,7 +5026,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1228844407}
-  - component: {fileID: 1228844408}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -5330,19 +5049,6 @@ Transform:
   - {fileID: 1014068426}
   m_Father: {fileID: 146162931}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1228844408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1228844406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1242242058
 GameObject:
   m_ObjectHideFlags: 0
@@ -5878,7 +5584,7 @@ GameObject:
   - component: {fileID: 1297624273}
   - component: {fileID: 1297624272}
   - component: {fileID: 1297624271}
-  - component: {fileID: 1297624270}
+  - component: {fileID: 1297624275}
   m_Layer: 0
   m_Name: Simple Oxygen Mark 2 Marker
   m_TagString: Untagged
@@ -5886,25 +5592,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1297624270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297624269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1297624273}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: o_a_1_1
-  mDatasetName: Vuforia/ChemicAR_2.xml
-  mCastedBehaviour: {fileID: 1297624273}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1297624271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6013,7 +5700,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1297624270}
+  mPreview: {fileID: 1297624275}
 --- !u!4 &1297624274
 Transform:
   m_ObjectHideFlags: 0
@@ -6030,6 +5717,25 @@ Transform:
   - {fileID: 1071036642}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1297624275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297624269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1297624273}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: o_a_1_1
+  mDatasetName: Vuforia/ChemicAR_2.xml
+  mCastedBehaviour: {fileID: 1297624273}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1001 &1298128563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6096,7 +5802,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1298331640}
-  - component: {fileID: 1298331641}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -6120,19 +5825,6 @@ Transform:
   - {fileID: 674561134}
   m_Father: {fileID: 601340321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1298331641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298331639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1326937896
 GameObject:
   m_ObjectHideFlags: 0
@@ -6142,7 +5834,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1326937897}
-  - component: {fileID: 1326937898}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -6166,19 +5857,6 @@ Transform:
   - {fileID: 1661229488}
   m_Father: {fileID: 1158471389}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1326937898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326937896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1327351896
 GameObject:
   m_ObjectHideFlags: 0
@@ -6409,7 +6087,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1336128677}
-  - component: {fileID: 1336128678}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -6433,19 +6110,6 @@ Transform:
   - {fileID: 1600684608}
   m_Father: {fileID: 1262962014}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1336128678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336128676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &1340285603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6604,9 +6268,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 616967876263983847, guid: 3418a6ea910d6ae4c9baab81ef930eef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1365016191}
-    - targetCorrespondingSourceObject: {fileID: 616967876263983847, guid: 3418a6ea910d6ae4c9baab81ef930eef, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1365016192}
   m_SourcePrefab: {fileID: 100100000, guid: 3418a6ea910d6ae4c9baab81ef930eef, type: 3}
 --- !u!1 &1365016186 stripped
 GameObject:
@@ -6643,25 +6304,6 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1365016187}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
---- !u!114 &1365016192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365016186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1365016187}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Carbon_Dioxide_1
-  mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 1365016187}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!4 &1374077819 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5008487948227983038, guid: 3c8b692ef90fabe42be6e3c3b2c3911f, type: 3}
@@ -6676,7 +6318,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1394652906}
-  - component: {fileID: 1394652907}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -6700,19 +6341,6 @@ Transform:
   - {fileID: 884624920}
   m_Father: {fileID: 1862457679}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1394652907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394652905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &1410849038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7940,9 +7568,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8058575027162916382, guid: 741d5c079b3e97143ab2f65ec203d58a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1695274631}
-    - targetCorrespondingSourceObject: {fileID: 8058575027162916382, guid: 741d5c079b3e97143ab2f65ec203d58a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1695274632}
   m_SourcePrefab: {fileID: 100100000, guid: 741d5c079b3e97143ab2f65ec203d58a, type: 3}
 --- !u!1 &1695274626 stripped
 GameObject:
@@ -7961,25 +7586,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1695274631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695274626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1695274627}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Sulfur_Trioxide_1
-  mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 1695274627}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1695274632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8553,7 +8159,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797697376}
-  - component: {fileID: 1797697377}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -8577,19 +8182,6 @@ Transform:
   - {fileID: 2137015032}
   m_Father: {fileID: 2019685025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1797697377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1797697375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &1800302452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8820,7 +8412,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1818111914}
-  - component: {fileID: 1818111915}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -8844,19 +8435,6 @@ Transform:
   - {fileID: 1248044617}
   m_Father: {fileID: 313662664}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1818111915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818111913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1827770278
 GameObject:
   m_ObjectHideFlags: 0
@@ -9388,7 +8966,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1869608577}
-  - component: {fileID: 1869608578}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -9412,19 +8989,6 @@ Transform:
   - {fileID: 195880638}
   m_Father: {fileID: 560242822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1869608578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869608576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!4 &1879126519 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2916995684962123654, guid: 0404a2edf5387484dae672df2f09519f, type: 3}
@@ -10047,9 +9611,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4592650738671994104, guid: 75c12e859aed0754db0e1971e1a03e2d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1979430830}
-    - targetCorrespondingSourceObject: {fileID: 4592650738671994104, guid: 75c12e859aed0754db0e1971e1a03e2d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1979430831}
   m_SourcePrefab: {fileID: 100100000, guid: 75c12e859aed0754db0e1971e1a03e2d, type: 3}
 --- !u!1 &1979430825 stripped
 GameObject:
@@ -10068,25 +9629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1979430830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979430825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1979430826}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Ammonia_1
-  mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 1979430826}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1979430831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10575,7 +10117,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2142645879}
-  - component: {fileID: 2142645880}
   m_Layer: 0
   m_Name: Atom
   m_TagString: Untagged
@@ -10599,19 +10140,6 @@ Transform:
   - {fileID: 1184126575}
   m_Father: {fileID: 1242242059}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2142645880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142645878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea8080607b0f6143bc776532e77940f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &3383535396331601880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10675,9 +10203,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5179384358301792401, guid: 2eb6271a308cb9746bdc76e78e9355a3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3383535396331601886}
-    - targetCorrespondingSourceObject: {fileID: 5179384358301792401, guid: 2eb6271a308cb9746bdc76e78e9355a3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3383535396331601887}
   m_SourcePrefab: {fileID: 100100000, guid: 2eb6271a308cb9746bdc76e78e9355a3, type: 3}
 --- !u!1 &3383535396331601881 stripped
 GameObject:
@@ -10696,25 +10221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &3383535396331601886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3383535396331601881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 3383535396331601882}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Carbon_1
-  mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 3383535396331601882}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &3383535396331601887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10808,9 +10314,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2188885008209286026, guid: a631ebf075d19e3458ec5951695180c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3881682905665216919}
-    - targetCorrespondingSourceObject: {fileID: 2188885008209286026, guid: a631ebf075d19e3458ec5951695180c1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3881682905665216920}
   m_SourcePrefab: {fileID: 100100000, guid: a631ebf075d19e3458ec5951695180c1, type: 3}
 --- !u!1 &3881682905665216914 stripped
 GameObject:
@@ -10829,25 +10332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &3881682905665216919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3881682905665216914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 3881682905665216915}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Hydrogen_1
-  mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 3881682905665216915}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &3881682905665216920
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10941,9 +10425,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4269952176738633157, guid: e9d5c891359d58442947196d49982a25, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5202525419127699449}
-    - targetCorrespondingSourceObject: {fileID: 4269952176738633157, guid: e9d5c891359d58442947196d49982a25, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5202525419127699450}
   m_SourcePrefab: {fileID: 100100000, guid: e9d5c891359d58442947196d49982a25, type: 3}
 --- !u!1 &5202525419127699444 stripped
 GameObject:
@@ -10962,25 +10443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &5202525419127699449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5202525419127699444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 5202525419127699445}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Oxygen_1
-  mDatasetName: Vuforia/ChemicAR.xml
-  mCastedBehaviour: {fileID: 5202525419127699445}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &5202525419127699450
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

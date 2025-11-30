@@ -36,12 +36,15 @@ public class Molecule
 {
     public bool initialized;
     public GameObject prefab;
+    public string text_to_load;
+    public Sprite image_to_load;
     public GameObject instance;
 
     public Molecule()
     {
         initialized = false;
         prefab = null;
+        image_to_load = null;
         instance = null;
     }
 }

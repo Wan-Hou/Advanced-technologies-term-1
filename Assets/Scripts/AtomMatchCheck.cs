@@ -19,8 +19,9 @@ public class AtomMatchCheck : MonoBehaviour
                 {
                     if (!MoleculeManager.instance.h2.initialized && !isConnectedToAnotherAtom)
                     {
-                        ActivateMolecule(MoleculeManager.instance.h2, transform, "H2 Molecule Activated");
+                        ActivateMolecule(MoleculeManager.instance.h2, transform, transform.parent, "H2 Molecule Activated");
                         GetComponent<MeshRenderer>().enabled = false;
+                        other.gameObject.GetComponent<MeshRenderer>().enabled = false;
                     }
                     break;
                 }
@@ -30,7 +31,7 @@ public class AtomMatchCheck : MonoBehaviour
                     other.gameObject.GetComponent<AtomMatchCheck>().isConnectedToAnotherAtom = true;
                     if (connected_h.Count == 2 && !MoleculeManager.instance.h2o.initialized)
                     {
-                        ActivateMolecule(MoleculeManager.instance.h2o, transform, "H2O Molecule Activated");
+                        ActivateMolecule(MoleculeManager.instance.h2o, transform, transform.parent, "H2O Molecule Activated");
                         foreach (GameObject h in connected_h)
                         {
                             h.GetComponent<MeshRenderer>().enabled = false;
@@ -45,18 +46,21 @@ public class AtomMatchCheck : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Carbon"))
         {
-            if (!MoleculeManager.instance.co.initialized)
+            switch (gameObject.tag)
             {
-                MoleculeManager.instance.co.initialized = true;
-                MoleculeManager.instance.co.instance =
-                    Instantiate
-                    (MoleculeManager.instance.co.prefab,
-                    transform.position,
-                    Quaternion.identity,
-                    transform);
-                Debug.Log("CO Molecule Activated");
+                case "Oxygen":
+                {
+                    if (!MoleculeManager.instance.co.initialized)
+                    {
+                        ActivateMolecule(MoleculeManager.instance.co, transform, transform.parent, "CO Molecule Activated");
+                        GetComponent<MeshRenderer>().enabled = false;
+                        other.gameObject.GetComponent<MeshRenderer>().enabled = false;
+                    }
+                    break;
+                }
+                default:
+                    break;
             }
-            GetComponent<MeshRenderer>().enabled = false;
         }
         if (other.gameObject.CompareTag("Oxygen"))
         {
@@ -66,15 +70,9 @@ public class AtomMatchCheck : MonoBehaviour
                 {
                     if (!MoleculeManager.instance.co.initialized)
                     {
-                        MoleculeManager.instance.co.initialized = true;
-                        MoleculeManager.instance.co.instance =
-                            Instantiate
-                            (MoleculeManager.instance.co.prefab,
-                            transform.position,
-                            Quaternion.identity,
-                            transform);
-                        Debug.Log("CO Molecule Activated");
+                        ActivateMolecule(MoleculeManager.instance.co, transform, transform.parent, "CO Molecule Activated");
                         GetComponent<MeshRenderer>().enabled = false;
+                        other.gameObject.GetComponent<MeshRenderer>().enabled = false;
                     }
                     break;
                 }
@@ -91,24 +89,15 @@ public class AtomMatchCheck : MonoBehaviour
         Debug.Log($"Lost contact with: {other.gameObject.name}");
         if (other.gameObject.CompareTag("Hydrogen"))
         {
-            if (MoleculeManager.instance.h2.initialized)
-            {
-                MoleculeManager.instance.h2.initialized = false;
-                Destroy(MoleculeManager.instance.h2.instance);
-                Debug.Log("H2 Molecule Deactivated");
-            }
-
-
             switch (gameObject.tag)
             {
                 case "Hydrogen":
                 {
                     if (MoleculeManager.instance.h2.initialized && !isConnectedToAnotherAtom)
                     {
-                        MoleculeManager.instance.h2.initialized = false;
-                        Destroy(MoleculeManager.instance.h2.instance);
-                        Debug.Log("H2 Molecule Deactivated");
+                        DisableMolecule(MoleculeManager.instance.h2, "H2 Molecule Deactivated");
                         GetComponent<MeshRenderer>().enabled = true;
+                        other.gameObject.GetComponent<MeshRenderer>().enabled = true;
                     }
                     break;
                 }
@@ -117,14 +106,12 @@ public class AtomMatchCheck : MonoBehaviour
                     other.gameObject.GetComponent<AtomMatchCheck>().isConnectedToAnotherAtom = false;
                     if (MoleculeManager.instance.h2o.initialized)
                     {
-                        MoleculeManager.instance.h2o.initialized = false;
-                        Destroy(MoleculeManager.instance.h2o.instance);
-                        Debug.Log("H2O Molecule Deactivated");
+                        DisableMolecule(MoleculeManager.instance.h2o, "H2O Molecule Deactivated");
                         foreach (GameObject h in connected_h)
                         {
-                            h.GetComponent<MeshRenderer>().enabled = false;
+                            h.GetComponent<MeshRenderer>().enabled = true;
                         }
-                        GetComponent<MeshRenderer>().enabled = false;
+                        GetComponent<MeshRenderer>().enabled = true;
                     }
                     connected_h.Remove(other.gameObject);
                     break;
@@ -135,37 +122,52 @@ public class AtomMatchCheck : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Carbon"))
         {
-            if (MoleculeManager.instance.co.instance)
+            switch (gameObject.tag)
             {
-                MoleculeManager.instance.co.initialized = false;
-                Destroy(MoleculeManager.instance.co.instance);
-                Debug.Log("CO Molecule Deactivated");
+                case "Oxygen":
+                    {
+                        if (MoleculeManager.instance.co.initialized)
+                        {
+                            DisableMolecule(MoleculeManager.instance.co, "CO Molecule Deactivated");
+                            GetComponent<MeshRenderer>().enabled = true;
+                            other.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                        }
+                        break;
+                    }
+                default:
+                    break;
             }
-            GetComponent<MeshRenderer>().enabled = true;
         }
         if (other.gameObject.CompareTag("Oxygen"))
         {
-            if (MoleculeManager.instance.co.instance)
+            switch (gameObject.tag)
             {
-                MoleculeManager.instance.co.initialized = false;
-                Destroy(MoleculeManager.instance.co.instance);
-                Debug.Log("CO Molecule Deactivated");
-                GetComponent<MeshRenderer>().enabled = true;
+                case "Carbon":
+                    {
+                        if (MoleculeManager.instance.co.initialized)
+                        {
+                            DisableMolecule(MoleculeManager.instance.co, "CO Molecule Deactivated");
+                            GetComponent<MeshRenderer>().enabled = true;
+                            other.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                        }
+                        break;
+                    }
+                default:
+                    break;
             }
         }
     }
 
-    public void ActivateMolecule(Molecule molecule, Transform transform, string log)
+    public void ActivateMolecule(Molecule molecule, Transform transform, Transform parent, string log)
     {
         molecule.initialized = true;
         molecule.instance =
             Instantiate
             (molecule.prefab,
             transform.position,
-
-            Quaternion.identity,
-            transform);
+            transform.rotation);
         Debug.Log(log);
+        UIManager.instance.InfoLoad(molecule.text_to_load, molecule.image_to_load);
     }
 
     public void DisableMolecule(Molecule molecule, string log)
@@ -173,6 +175,7 @@ public class AtomMatchCheck : MonoBehaviour
         molecule.initialized = false;
         Destroy(molecule.instance);
         Debug.Log(log);
+        UIManager.instance.DisableInfo(molecule.text_to_load);
     }
 
 }
