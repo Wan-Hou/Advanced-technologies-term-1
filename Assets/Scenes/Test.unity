@@ -261,6 +261,12 @@ MonoBehaviour:
     text_to_load: H2O - Angular
     image_to_load: {fileID: 21300000, guid: 32ec1cf7c1488064db1e05d970f69590, type: 3}
     instance: {fileID: 0}
+  co2:
+    initialized: 0
+    prefab: {fileID: 266662187803492846, guid: 24d484dbe79b94d4bb6ff337733e83d7, type: 3}
+    text_to_load: CO2 - Linear
+    image_to_load: {fileID: 21300000, guid: 2d4e18b3120efdf4b885a269afd36017, type: 3}
+    instance: {fileID: 0}
 --- !u!1 &117020897
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,8 +331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Carbon
+  image_to_load: {fileID: 21300000, guid: 903559316a43ae64598ec99345594564, type: 3}
 --- !u!114 &146162929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,7 +631,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 163602980}
+      addedObject: {fileID: 163602984}
   m_SourcePrefab: {fileID: 100100000, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
 --- !u!1 &163602975 stripped
 GameObject:
@@ -643,7 +649,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &163602980
+--- !u!114 &163602984
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -893,8 +899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Oxygen
+  image_to_load: {fileID: 21300000, guid: 592a45e547ac28e44a1d0d2b894fb78e, type: 3}
 --- !u!114 &218734070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1433,8 +1439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Nitrogen
+  image_to_load: {fileID: 21300000, guid: e9756d68d5145d543ae07a67f5a05e9c, type: 3}
 --- !u!114 &313662666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1597,8 +1603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Carbon
+  image_to_load: {fileID: 21300000, guid: 903559316a43ae64598ec99345594564, type: 3}
 --- !u!114 &333434819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2059,8 +2065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Oxygen
+  image_to_load: {fileID: 21300000, guid: 592a45e547ac28e44a1d0d2b894fb78e, type: 3}
 --- !u!114 &560242824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2237,7 +2243,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 565102458}
+      addedObject: {fileID: 565102462}
   m_SourcePrefab: {fileID: 100100000, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
 --- !u!1 &565102453 stripped
 GameObject:
@@ -2255,7 +2261,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &565102458
+--- !u!114 &565102462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2354,8 +2360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Hydrogen
+  image_to_load: {fileID: 21300000, guid: d3ea79e1e26ae62449a6fe1cd8116266, type: 3}
 --- !u!114 &601340323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2676,8 +2682,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Carbon
+  image_to_load: {fileID: 21300000, guid: 903559316a43ae64598ec99345594564, type: 3}
 --- !u!114 &676593756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3840,8 +3846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Nitrogen
+  image_to_load: {fileID: 21300000, guid: e9756d68d5145d543ae07a67f5a05e9c, type: 3}
 --- !u!114 &981727066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4160,8 +4166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Hydrogen
+  image_to_load: {fileID: 21300000, guid: d3ea79e1e26ae62449a6fe1cd8116266, type: 3}
 --- !u!114 &1034978444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4413,8 +4419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Nitrogen
+  image_to_load: {fileID: 21300000, guid: e9756d68d5145d543ae07a67f5a05e9c, type: 3}
 --- !u!114 &1054394282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4729,8 +4735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Hydrogen
+  image_to_load: {fileID: 21300000, guid: d3ea79e1e26ae62449a6fe1cd8116266, type: 3}
 --- !u!114 &1158471387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5097,8 +5103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Oxygen
+  image_to_load: {fileID: 21300000, guid: 592a45e547ac28e44a1d0d2b894fb78e, type: 3}
 --- !u!114 &1242242061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5380,8 +5386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Hydrogen
+  image_to_load: {fileID: 21300000, guid: d3ea79e1e26ae62449a6fe1cd8116266, type: 3}
 --- !u!114 &1262962016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5604,8 +5610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Oxygen
+  image_to_load: {fileID: 21300000, guid: 592a45e547ac28e44a1d0d2b894fb78e, type: 3}
 --- !u!114 &1297624272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5905,8 +5911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Carbon
+  image_to_load: {fileID: 21300000, guid: 903559316a43ae64598ec99345594564, type: 3}
 --- !u!114 &1327351899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6267,7 +6273,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 616967876263983847, guid: 3418a6ea910d6ae4c9baab81ef930eef, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1365016191}
+      addedObject: {fileID: 1365016195}
   m_SourcePrefab: {fileID: 100100000, guid: 3418a6ea910d6ae4c9baab81ef930eef, type: 3}
 --- !u!1 &1365016186 stripped
 GameObject:
@@ -6285,7 +6291,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1365016191
+--- !u!114 &1365016195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6483,8 +6489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Hydrogen
+  image_to_load: {fileID: 21300000, guid: d3ea79e1e26ae62449a6fe1cd8116266, type: 3}
 --- !u!114 &1495803835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6647,8 +6653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Nitrogen
+  image_to_load: {fileID: 21300000, guid: e9756d68d5145d543ae07a67f5a05e9c, type: 3}
 --- !u!114 &1518088099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6856,8 +6862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Oxygen
+  image_to_load: {fileID: 21300000, guid: 592a45e547ac28e44a1d0d2b894fb78e, type: 3}
 --- !u!114 &1574843739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7270,8 +7276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Nitrogen
+  image_to_load: {fileID: 21300000, guid: e9756d68d5145d543ae07a67f5a05e9c, type: 3}
 --- !u!114 &1616075418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7567,7 +7573,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8058575027162916382, guid: 741d5c079b3e97143ab2f65ec203d58a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1695274631}
+      addedObject: {fileID: 1695274635}
   m_SourcePrefab: {fileID: 100100000, guid: 741d5c079b3e97143ab2f65ec203d58a, type: 3}
 --- !u!1 &1695274626 stripped
 GameObject:
@@ -7585,7 +7591,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1695274631
+--- !u!114 &1695274635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7958,8 +7964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Carbon
+  image_to_load: {fileID: 21300000, guid: 903559316a43ae64598ec99345594564, type: 3}
 --- !u!114 &1765135513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8287,8 +8293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Hydrogen
+  image_to_load: {fileID: 21300000, guid: d3ea79e1e26ae62449a6fe1cd8116266, type: 3}
 --- !u!114 &1814919399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8620,8 +8626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Hydrogen
+  image_to_load: {fileID: 21300000, guid: d3ea79e1e26ae62449a6fe1cd8116266, type: 3}
 --- !u!114 &1854250818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8841,8 +8847,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Oxygen
+  image_to_load: {fileID: 21300000, guid: 592a45e547ac28e44a1d0d2b894fb78e, type: 3}
 --- !u!114 &1862457681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9047,8 +9053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Carbon
+  image_to_load: {fileID: 21300000, guid: 903559316a43ae64598ec99345594564, type: 3}
 --- !u!114 &1893868148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9268,8 +9274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Carbon
+  image_to_load: {fileID: 21300000, guid: 903559316a43ae64598ec99345594564, type: 3}
 --- !u!114 &1911657528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9432,8 +9438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Oxygen
+  image_to_load: {fileID: 21300000, guid: 592a45e547ac28e44a1d0d2b894fb78e, type: 3}
 --- !u!114 &1932991523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9610,7 +9616,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4592650738671994104, guid: 75c12e859aed0754db0e1971e1a03e2d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1979430830}
+      addedObject: {fileID: 1979430834}
   m_SourcePrefab: {fileID: 100100000, guid: 75c12e859aed0754db0e1971e1a03e2d, type: 3}
 --- !u!1 &1979430825 stripped
 GameObject:
@@ -9628,7 +9634,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1979430830
+--- !u!114 &1979430834
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9732,8 +9738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Name - Shape
-  image_to_load: {fileID: 0}
+  text_to_load: Nitrogen
+  image_to_load: {fileID: 21300000, guid: e9756d68d5145d543ae07a67f5a05e9c, type: 3}
 --- !u!114 &2019685027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10151,7 +10157,7 @@ PrefabInstance:
     - target: {fileID: 4889738197377851489, guid: 2eb6271a308cb9746bdc76e78e9355a3, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3383535396331601890}
     - target: {fileID: 5179384358301792401, guid: 2eb6271a308cb9746bdc76e78e9355a3, type: 3}
       propertyPath: m_Name
       value: Simple Carbon Marker
@@ -10202,7 +10208,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5179384358301792401, guid: 2eb6271a308cb9746bdc76e78e9355a3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3383535396331601886}
+      addedObject: {fileID: 3383535396331601890}
   m_SourcePrefab: {fileID: 100100000, guid: 2eb6271a308cb9746bdc76e78e9355a3, type: 3}
 --- !u!1 &3383535396331601881 stripped
 GameObject:
@@ -10220,7 +10226,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3383535396331601886
+--- !u!114 &3383535396331601890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10313,7 +10319,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2188885008209286026, guid: a631ebf075d19e3458ec5951695180c1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3881682905665216919}
+      addedObject: {fileID: 3881682905665216924}
+    - targetCorrespondingSourceObject: {fileID: 2188885008209286026, guid: a631ebf075d19e3458ec5951695180c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3881682905665216923}
   m_SourcePrefab: {fileID: 100100000, guid: a631ebf075d19e3458ec5951695180c1, type: 3}
 --- !u!1 &3881682905665216914 stripped
 GameObject:
@@ -10331,7 +10340,26 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3881682905665216919
+--- !u!114 &3881682905665216923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3881682905665216914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 3881682905665216915}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Hydrogen_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 3881682905665216915}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &3881682905665216924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10424,7 +10452,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4269952176738633157, guid: e9d5c891359d58442947196d49982a25, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5202525419127699449}
+      addedObject: {fileID: 5202525419127699454}
+    - targetCorrespondingSourceObject: {fileID: 4269952176738633157, guid: e9d5c891359d58442947196d49982a25, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5202525419127699453}
   m_SourcePrefab: {fileID: 100100000, guid: e9d5c891359d58442947196d49982a25, type: 3}
 --- !u!1 &5202525419127699444 stripped
 GameObject:
@@ -10442,7 +10473,26 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5202525419127699449
+--- !u!114 &5202525419127699453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5202525419127699444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 5202525419127699445}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Oxygen_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 5202525419127699445}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &5202525419127699454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

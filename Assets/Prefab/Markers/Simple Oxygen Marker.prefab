@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Oxygen (O)
-  image_to_load: {fileID: 0}
+  text_to_load: Oxygen
+  image_to_load: {fileID: 21300000, guid: 592a45e547ac28e44a1d0d2b894fb78e, type: 3}
 --- !u!1 &5650816848750188506
 GameObject:
   m_ObjectHideFlags: 0

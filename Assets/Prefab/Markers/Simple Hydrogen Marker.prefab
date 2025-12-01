@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d576c42fb323e8f4cb12d656ed5d1ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_to_load: Hydrogen (H)
-  image_to_load: {fileID: 0}
+  text_to_load: Hydrogen
+  image_to_load: {fileID: 21300000, guid: d3ea79e1e26ae62449a6fe1cd8116266, type: 3}
 --- !u!1 &5228327606391424559
 GameObject:
   m_ObjectHideFlags: 0

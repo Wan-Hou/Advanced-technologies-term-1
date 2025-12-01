@@ -9,6 +9,7 @@ public class MoleculeManager : MonoBehaviour
     public Molecule co = new Molecule();
     public Molecule o2 = new Molecule();
     public Molecule h2o = new Molecule();
+    public Molecule co2 = new Molecule();
 
     private void Awake()
     {

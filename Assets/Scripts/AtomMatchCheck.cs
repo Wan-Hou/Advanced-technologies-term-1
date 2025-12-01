@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class AtomMatchCheck : MonoBehaviour
 {
     public List<GameObject> connected_h = new List<GameObject>();
+    public List<GameObject> connected_o = new List<GameObject>();
     public bool isConnectedToAnotherAtom = false;
 
     [ContextMenu("When atoms interact")]
@@ -20,7 +21,6 @@ public class AtomMatchCheck : MonoBehaviour
                     if (!MoleculeManager.instance.h2.initialized && !isConnectedToAnotherAtom)
                     {
                         ActivateMolecule(MoleculeManager.instance.h2, transform, transform.parent, "H2 Molecule Activated");
-                        GetComponent<MeshRenderer>().enabled = false;
                         other.gameObject.GetComponent<MeshRenderer>().enabled = false;
                     }
                     break;
@@ -36,7 +36,6 @@ public class AtomMatchCheck : MonoBehaviour
                         {
                             h.GetComponent<MeshRenderer>().enabled = false;
                         }
-                        GetComponent<MeshRenderer>().enabled = false;
                     }
                     break;
                 }
@@ -53,7 +52,6 @@ public class AtomMatchCheck : MonoBehaviour
                     if (!MoleculeManager.instance.co.initialized)
                     {
                         ActivateMolecule(MoleculeManager.instance.co, transform, transform.parent, "CO Molecule Activated");
-                        GetComponent<MeshRenderer>().enabled = false;
                         other.gameObject.GetComponent<MeshRenderer>().enabled = false;
                     }
                     break;
@@ -68,10 +66,34 @@ public class AtomMatchCheck : MonoBehaviour
             {
                 case "Carbon":
                 {
-                    if (!MoleculeManager.instance.co.initialized)
+                    bool alreadyConnected = false;
+                    foreach (GameObject o in connected_o)
+                    {
+                        if (o == other.gameObject) 
+                        {
+                            alreadyConnected = true;
+                        }
+                    }
+                    if (alreadyConnected) break;
+
+                    connected_o.Add(other.gameObject);
+                    other.gameObject.GetComponent<AtomMatchCheck>().isConnectedToAnotherAtom = true;
+                    if (connected_o.Count == 2 && !MoleculeManager.instance.co2.initialized)
+                    {
+                        ActivateMolecule(MoleculeManager.instance.co2, transform, transform.parent, "CO2 Molecule Activated");
+                        foreach (GameObject o in connected_o)
+                        {
+                            o.GetComponent<MeshRenderer>().enabled = false;
+                        }
+
+                        if (MoleculeManager.instance.co.initialized)
+                        {
+                            DisableMolecule(MoleculeManager.instance.co, "CO Molecule Deactivated");
+                        }
+                    }
+                    if (connected_o.Count == 1 && !MoleculeManager.instance.co.initialized)
                     {
                         ActivateMolecule(MoleculeManager.instance.co, transform, transform.parent, "CO Molecule Activated");
-                        GetComponent<MeshRenderer>().enabled = false;
                         other.gameObject.GetComponent<MeshRenderer>().enabled = false;
                     }
                     break;
@@ -96,7 +118,6 @@ public class AtomMatchCheck : MonoBehaviour
                     if (MoleculeManager.instance.h2.initialized && !isConnectedToAnotherAtom)
                     {
                         DisableMolecule(MoleculeManager.instance.h2, "H2 Molecule Deactivated");
-                        GetComponent<MeshRenderer>().enabled = true;
                         other.gameObject.GetComponent<MeshRenderer>().enabled = true;
                     }
                     break;
@@ -111,7 +132,6 @@ public class AtomMatchCheck : MonoBehaviour
                         {
                             h.GetComponent<MeshRenderer>().enabled = true;
                         }
-                        GetComponent<MeshRenderer>().enabled = true;
                     }
                     connected_h.Remove(other.gameObject);
                     break;
@@ -129,7 +149,6 @@ public class AtomMatchCheck : MonoBehaviour
                         if (MoleculeManager.instance.co.initialized)
                         {
                             DisableMolecule(MoleculeManager.instance.co, "CO Molecule Deactivated");
-                            GetComponent<MeshRenderer>().enabled = true;
                             other.gameObject.GetComponent<MeshRenderer>().enabled = true;
                         }
                         break;
@@ -144,11 +163,24 @@ public class AtomMatchCheck : MonoBehaviour
             {
                 case "Carbon":
                     {
-                        if (MoleculeManager.instance.co.initialized)
+                        other.gameObject.GetComponent<AtomMatchCheck>().isConnectedToAnotherAtom = false;
+                        if (connected_o.Count == 1 && MoleculeManager.instance.co.initialized)
                         {
                             DisableMolecule(MoleculeManager.instance.co, "CO Molecule Deactivated");
-                            GetComponent<MeshRenderer>().enabled = true;
-                            other.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                            foreach (GameObject o in connected_o)
+                            {
+                                o.GetComponent<MeshRenderer>().enabled = true;
+                            }
+                            connected_o.Remove(other.gameObject);
+                        }
+                        if (connected_o.Count == 2 && MoleculeManager.instance.co2.initialized)
+                        {
+                            DisableMolecule(MoleculeManager.instance.co2, "CO2 Molecule Deactivated");
+                            foreach (GameObject o in connected_o)
+                            {
+                                o.GetComponent<MeshRenderer>().enabled = true;
+                            }
+                            connected_o.Remove(other.gameObject);
                         }
                         break;
                     }
@@ -165,7 +197,9 @@ public class AtomMatchCheck : MonoBehaviour
             Instantiate
             (molecule.prefab,
             transform.position,
-            transform.rotation);
+            transform.rotation,
+            parent);
+        GetComponent<MeshRenderer>().enabled = false;
         Debug.Log(log);
         UIManager.instance.InfoLoad(molecule.text_to_load, molecule.image_to_load);
     }
@@ -175,7 +209,9 @@ public class AtomMatchCheck : MonoBehaviour
         molecule.initialized = false;
         Destroy(molecule.instance);
         Debug.Log(log);
+        GetComponent<MeshRenderer>().enabled = true;
         UIManager.instance.DisableInfo(molecule.text_to_load);
+        GetComponentInParent<Change_UI>().LoadTextIntoUI();
     }
 
 }
