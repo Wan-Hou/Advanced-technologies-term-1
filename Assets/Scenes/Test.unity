@@ -241,7 +241,7 @@ MonoBehaviour:
     initialized: 0
     prefab: {fileID: 4161818489542422665, guid: 151b3e630decaf34a871aa7edf334727, type: 3}
     text_to_load: H2 - Linear
-    image_to_load: {fileID: 0}
+    image_to_load: {fileID: 21300000, guid: 8b8a54df969e3d0439cb47c073bb640b, type: 3}
     instance: {fileID: 0}
   co:
     initialized: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
     initialized: 0
     prefab: {fileID: 3938277557079516144, guid: b8cf0e60b6ba26e41bf860395c34cc61, type: 3}
     text_to_load: O2 - Linear
-    image_to_load: {fileID: 0}
+    image_to_load: {fileID: 21300000, guid: 4e2f7c196b075274cb76ba0e515bbb4e, type: 3}
     instance: {fileID: 0}
   h2o:
     initialized: 0
@@ -632,6 +632,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 163602984}
+    - targetCorrespondingSourceObject: {fileID: 7570303068206472604, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 163602985}
   m_SourcePrefab: {fileID: 100100000, guid: 81d0c09c33444584a92b40e51226815a, type: 3}
 --- !u!1 &163602975 stripped
 GameObject:
@@ -650,6 +653,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &163602984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163602975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 163602976}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Water_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 163602976}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &163602985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2244,6 +2266,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 565102462}
+    - targetCorrespondingSourceObject: {fileID: 5562281280191703016, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 565102463}
   m_SourcePrefab: {fileID: 100100000, guid: 8b6f6dd4ab86f6644871a25f446fdfd9, type: 3}
 --- !u!1 &565102453 stripped
 GameObject:
@@ -2262,6 +2287,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &565102462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565102453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 565102454}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Methane_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 565102454}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &565102463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6274,6 +6318,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 616967876263983847, guid: 3418a6ea910d6ae4c9baab81ef930eef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1365016195}
+    - targetCorrespondingSourceObject: {fileID: 616967876263983847, guid: 3418a6ea910d6ae4c9baab81ef930eef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1365016196}
   m_SourcePrefab: {fileID: 100100000, guid: 3418a6ea910d6ae4c9baab81ef930eef, type: 3}
 --- !u!1 &1365016186 stripped
 GameObject:
@@ -6292,6 +6339,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1365016195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365016186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1365016187}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Carbon_Dioxide_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 1365016187}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1365016196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7574,6 +7640,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8058575027162916382, guid: 741d5c079b3e97143ab2f65ec203d58a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1695274635}
+    - targetCorrespondingSourceObject: {fileID: 8058575027162916382, guid: 741d5c079b3e97143ab2f65ec203d58a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1695274636}
   m_SourcePrefab: {fileID: 100100000, guid: 741d5c079b3e97143ab2f65ec203d58a, type: 3}
 --- !u!1 &1695274626 stripped
 GameObject:
@@ -7592,6 +7661,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1695274635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695274626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1695274627}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Sulfur_Trioxide_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 1695274627}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1695274636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9617,6 +9705,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4592650738671994104, guid: 75c12e859aed0754db0e1971e1a03e2d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1979430834}
+    - targetCorrespondingSourceObject: {fileID: 4592650738671994104, guid: 75c12e859aed0754db0e1971e1a03e2d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1979430835}
   m_SourcePrefab: {fileID: 100100000, guid: 75c12e859aed0754db0e1971e1a03e2d, type: 3}
 --- !u!1 &1979430825 stripped
 GameObject:
@@ -9635,6 +9726,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1979430834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979430825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1979430826}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Ammonia_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 1979430826}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1979430835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10323,6 +10433,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2188885008209286026, guid: a631ebf075d19e3458ec5951695180c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3881682905665216923}
+    - targetCorrespondingSourceObject: {fileID: 2188885008209286026, guid: a631ebf075d19e3458ec5951695180c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3881682905665216925}
   m_SourcePrefab: {fileID: 100100000, guid: a631ebf075d19e3458ec5951695180c1, type: 3}
 --- !u!1 &3881682905665216914 stripped
 GameObject:
@@ -10360,6 +10473,25 @@ MonoBehaviour:
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
 --- !u!114 &3881682905665216924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3881682905665216914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 3881682905665216915}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Hydrogen_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 3881682905665216915}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &3881682905665216925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10456,6 +10588,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4269952176738633157, guid: e9d5c891359d58442947196d49982a25, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5202525419127699453}
+    - targetCorrespondingSourceObject: {fileID: 4269952176738633157, guid: e9d5c891359d58442947196d49982a25, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5202525419127699455}
   m_SourcePrefab: {fileID: 100100000, guid: e9d5c891359d58442947196d49982a25, type: 3}
 --- !u!1 &5202525419127699444 stripped
 GameObject:
@@ -10493,6 +10628,25 @@ MonoBehaviour:
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
 --- !u!114 &5202525419127699454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5202525419127699444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 5202525419127699445}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Oxygen_1
+  mDatasetName: Vuforia/ChemicAR.xml
+  mCastedBehaviour: {fileID: 5202525419127699445}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &5202525419127699455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
